@@ -25,7 +25,7 @@ def test_basket_api():
     # Ваши учетные данные
     payload = {
         'username': 'admin',
-        'password': 'admin',
+        'password': 'mainadmin123',
         'csrfmiddlewaretoken': csrf_token
     }
 
