@@ -60,7 +60,7 @@ def test_basket_api():
         data = response.json()
         cart_items = data.get('cart_items', [])
         for item in cart_items:
-            print(f"Товар: {item['name']}, Цена: {item['price']}, Количество: {item['quantity']}")
+            print(f"Товар: {item['name']}, Цена: {item['price']}, Количество daaaa: {item['quantity']}")
     else:
         print("Ошибка при доступе к API корзины.")
         print(f"Статус-код ответа: {response.status_code}")
