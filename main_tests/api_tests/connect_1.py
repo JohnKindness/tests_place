@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 import pytest
-
+import time
 
 def test_basket_api():
     session = requests.Session()
@@ -55,6 +55,8 @@ def test_basket_api():
     # Делаем запрос к API корзины
     api_url = 'http://127.0.0.1:8000/api/cart/'
     response = session.get(api_url)
+
+    time.sleep(20)
 
     if response.ok:
         data = response.json()
